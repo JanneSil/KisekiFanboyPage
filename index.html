@@ -5,6 +5,32 @@
 	<head>
 		<title>Kiseki Fanboy's Page</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+function validateForm()
+{
+if (document.forms["myForm"]["fname"].value==null || document.forms["myForm"]["fname"].value=="")
+{
+alert("Best Kiseki game must be filled out");
+return false;
+}
+if (document.forms["myForm"]["gender"].value==null || document.forms["myForm"]["gender"].value=="")
+{
+alert("Gender must be filled out");
+return false;
+}
+if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+{
+alert("Email must be filled out");
+return false;
+}
+if (document.forms["myForm"]["game"].value==null || document.forms["myForm"]["game"].value=="")
+{
+alert("Kiseki or Trails must be filled out");
+return false;
+}
+return true;
+}
+</script>
 	</head>
 	<body>
 		<div id "wrap">
@@ -30,7 +56,7 @@
 <div id="content">
 <div id="mainpage">
 	<h1> Janne's Web page </h1>
-		<p>Welcome to number one Kiseki fanboys web page.</p>
+		<p>Welcome to number one Kiseki fanboy's web page.</p>
 		
 	<h2> Links </h2>
 	<a href="https://www.falcom.co.jp/sen4/" target="_blank"> Kiseki Official Page </a> <br>
@@ -84,8 +110,9 @@
 		
 		</Table>
 		
+		
 		<h2 id="contactus">What is the best Kiseki Game?</h2>
-		<form>
+		<form name="myForm" onsubmit="return validateForm()">
 		Best Kiseki Game : <br> <input type="text" name="fname" > <br>
 		<br>
 		Gender: <br>
@@ -98,10 +125,11 @@
 		Trails or Kiseki?: <select name="game">
 		<option>Kiseki</option>
 		<option>Trails</option>
-		</select> <br>	
+		</select> <br>
+		<br>
 		<input type="submit" value="Submit">
-		
 		</form>
+		
 		
 		</div>
 		</div>
