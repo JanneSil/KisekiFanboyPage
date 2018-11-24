@@ -14,7 +14,7 @@ body {
 /* Header */
 #header {
 	height:242PX;
-	background:url("https://raw.githubusercontent.com/JanneSil/WWWProjekti/master/images/header.png") no-repeat left top;
+	background:url("https://raw.githubusercontent.com/JanneSil/WWWProjekti/master/images/header.png") no-repeat center top;
 	clear: both;
 
 }
@@ -27,7 +27,7 @@ body {
 #topmenu {
 	display:block;
 	list-style:none;
-	float:right;
+	float:left;
 	padding:0 0px 0px 278px;
 	width: 415px;
 }
@@ -61,7 +61,7 @@ body {
 }
 #mainpage {
 	width:700px;
-	float:left;
+	float:center;
 	padding:5px 5px 5px 0px;
 	height:auto;
 }
