@@ -27,7 +27,7 @@ body {
 #topmenu {
 	display:block;
 	list-style:none;
-	float:left;
+	float:center;
 	padding:0 0px 0px 278px;
 	width: 415px;
 }
@@ -57,7 +57,7 @@ body {
 
 /*Content*/
 #content {
-	background-color: #FFFFFF;
+	text-align:center;
 }
 #mainpage {
 	width:700px;
