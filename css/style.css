@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5 {
 	font-size:11px;
 	clear: both;
 }
-#div1, #div2, #div3 {
+#div1 {
     float: left;
     width: 455px;
     height: 262px;
