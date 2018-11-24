@@ -36,7 +36,7 @@ body {
 }
 #topmenu a {
 	display:block;
-	float:left;
+	float:center;
 	height:28px;
 	margin:0px 0px 0px0px;
 	text-decoration:none;
@@ -44,20 +44,20 @@ body {
 	text-align:center;
 }
 #topmenu a, #topmenu a:visited, #topmenu a:active {
-	color:#FFFFFF;
+	color:#6a5acd;
 }
 #topmenu a:hover{
-	color:#ffffff;
+	color:#6a5acd;
 	background-color: #B52E10;
 }
 #topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
-	color:#FFFFFF;
+	color:#6a5acd;
 	background-color: #B42D0F;
 }
 
 /*Content*/
 #content {
-	background-color: FFFFFF;
+	background-color: #FFFFFF;
 }
 #mainpage {
 	width:700px;
