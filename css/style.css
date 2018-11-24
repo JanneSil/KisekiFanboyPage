@@ -19,6 +19,10 @@ body {
 	color: #000000, #FF0000;
 }
 
+#topbar {
+	heigh:78px;
+}
+
 /* Header Menu */
 #topmenu {
 	display:block;
