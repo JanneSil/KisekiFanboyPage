@@ -14,7 +14,7 @@ body {
 /* Header */
 #header {
 	height:242PX;
-	background:url(images/bg.jpg) no-repeat left top;
+	background:url(images/header.png) no-repeat left top;
 	clear: both;
 
 }
