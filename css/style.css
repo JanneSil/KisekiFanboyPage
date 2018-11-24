@@ -113,6 +113,8 @@ h1, h2, h3, h4, h5 {
 }
 #div1 {
     float: left;
+	
+	
     width: 256;
     height: 256;
     margin: 10px;
