@@ -118,10 +118,15 @@ table {
 }
 
 table, th, td {
-	border:1px solid red;
+	border:1px #333333;
 	padding: 15px;
 }
 th {
 	text-align: left;
-	
 }
+table#t1{
+	width: 75%;
+	background-color: #333333;
+	border: 1px;
+}
+
