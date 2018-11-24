@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5 {
 	height:20px;
 	padding:10px;
 	color:#FFFFFF;
-	background: #333333;
+	background: #ff6347;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	text-align:center;
 	font-size:11px;
@@ -118,7 +118,7 @@ table {
 }
 
 table, th, td {
-	border:1px #333333;
+	border:1px #ff6347;
 	padding: 15px;
 }
 th {
@@ -126,7 +126,7 @@ th {
 }
 table#t1{
 	width: 75%;
-	background-color: #333333;
+	background-color: #ff6347;
 	border: 1px;
 }
 
