@@ -31,17 +31,31 @@ return false;
 return true;
 }
 
-			function showLocation(){
-				if(navigator.geolocation){
-					navigator.geolocation.getCurrentPosition(showPosition);
-				} else {
-					alert('Your browser does not support geolocation');
-				}
-			}
+function showLocation(){
+	if(navigator.geolocation){
+		navigator.geolocation.getCurrentPosition(showPosition);
+	} else {
+		alert('Your browser does not support geolocation');
+	}
+}
 			
-			function showPosition(position){
-				alert("Latitude: "+ position.coords.latitude + " Longitude: " + position.coords.longitude);
-			}
+function showPosition(position){
+	alert("Latitude: "+ position.coords.latitude + " Longitude: " + position.coords.longitude);
+}
+			
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
 
 </script>
 	</head>
@@ -152,7 +166,13 @@ return true;
 		<br>
 		<input type="submit" value="Submit">
 		</form>
-		<br> <br>
+		<br> 
+		
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<img id="drag1" src="https://gfycat.com/gifs/detail/cluttereddeadlygreendarnerdragonfly" draggable="true"
+		ondragstart="drag(event)" width="336" height="69">
+		
+		<br>
 		<h4 id="contact">Click here to get your location!</h4>
 		<button onclick="showLocation()">Click</button> <br>
 		
