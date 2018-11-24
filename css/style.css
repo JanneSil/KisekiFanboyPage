@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5 {
 	clear: both;
 }
 #div1, #div2 {
-    float: center;
+    float: left;
     width: 455px;
     height: 262px;
     margin: 10px;
